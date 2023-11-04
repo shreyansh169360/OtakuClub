@@ -28,9 +28,16 @@
     justify-content: space-between;
   }
   .logo {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    img {
+    .text{
+      height: 25px;
+
+    }
+    .icon{
       height: 50px;
+      width: 50px;
     }
   }
   .menuItems {

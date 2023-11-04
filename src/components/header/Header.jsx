@@ -7,7 +7,9 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/movix-logo.svg";
+// import logo from "../../assets/movix-logo.svg";
+import logo from "../../assets/Otaku Club.svg";
+import icon from "../../assets/otakuIcon.svg";
 
 const Header = () => {
   const [show, setShow] = useState("top");
@@ -52,7 +54,8 @@ const Header = () => {
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
         <div className="logo" onClick={() => navigate(`/`)}>
-          <img src={logo} alt="" />
+          <img className="icon" src={icon} alt="" />
+          <img className="text" src={logo} alt="" />
         </div>
         <ul className="menuItems">
           <li className="menuItem" onClick={() => navigationHandler('anime')}>Anime</li>
